@@ -1,1 +1,1 @@
-# real-time-human-action-recognition
+# Real-time human action recognition
