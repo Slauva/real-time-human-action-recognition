@@ -1,0 +1,335 @@
+:root {
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+        Cantarell, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    /* Color for page background */
+    --color-bg-0: rgb(236, 236, 236);
+    /* Color for top-level components (navbar, sidebar, details view, etc.) */
+    --color-bg-1: rgb(255, 255, 255);
+    /* For alternating colors i.e. in table */
+    --color-bg-1-alternating: rgb(245, 245, 245);
+    --color-bg-1-hover: rgb(220, 220, 220);
+    /* Color for nested components (cards, nested containers, etc.) */
+    --color-bg-2: rgb(245, 245, 245);
+    --color-bg-2-hover: rgb(230, 230, 230);
+    --color-bg-2-border: rgb(200, 200, 200);
+    --color-bg-2-selected: rgb(235, 235, 235);
+    /* Color for components (buttons, text fields, etc.) */
+    --color-bg-3: rgb(230, 230, 230);
+    --color-bg-3-hover: rgb(220, 220, 220);
+    --color-bg-3-border: rgb(210, 210, 210);
+
+    --color-theme-1: rgb(209, 16, 73);
+    --color-theme-1-fg: white;
+    --color-theme-1-hover: rgb(230, 18, 82);
+
+    --color-theme-1-somelight: rgb(255, 196, 108);
+    --color-theme-1-light: rgb(253, 214, 155);
+    --color-theme-1-extralight: rgb(255, 242, 227);
+
+    --color-theme-2: #7dc0ff;
+    --color-theme-2-fg: white;
+    --color-theme-2-hover: #5ba6eb;
+
+    --border-color: rgb(210, 210, 210);
+
+    --color-shadow: rgba(0, 0, 0, 0.1);
+
+    --color-checkbox-bg: rgb(255, 255, 255);
+    --color-checkbox-border: rgb(200, 200, 200);
+
+    /* For use as a primary color for borders */
+    --color-success: #129c00;
+    --color-info: #00b7ff;
+    --color-warning: #ffd000;
+    --color-danger: #ff6363;
+    /* For use as a background colors */
+    --color-success-bg: #30e01945;
+    --color-info-bg: #00b7ff45;
+    --color-warning-bg: #ffd00045;
+    --color-danger-bg: #ff636345;
+    /* For use as a primary color for text */
+    --color-success-fg: #108d00;
+    --color-info-fg: #008bc2;
+    --color-warning-fg: #917600;
+    --color-danger-fg: #ff0000;
+
+    --color-text: rgba(0, 0, 0, 0.8);
+    /* Slightly muted text color for less important parts (like sidebar) */
+    --color-text-1: rgba(0, 0, 0, 0.6);
+    /* Muted text color for non-focus parts (like subtitles) */
+    --color-text-2: rgba(0, 0, 0, 0.5);
+    /* For text color on themed elements, like primary buttons */
+    --color-text-themed: rgba(255, 255, 255, 1);
+
+    --column-width: 42rem;
+    --column-margin-top: 4rem;
+    font-family: var(--font-body);
+    color: var(--color-text);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+            Cantarell, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+        --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+        /* Color for page background */
+        --color-bg-0: rgb(25, 25, 25);
+        /* Color for top-level components (navbar, sidebar, details view, etc.) */
+        --color-bg-1: rgb(40, 40, 40);
+        /* For alternating colors i.e. in table */
+        --color-bg-1-alternating: rgb(50, 50, 50);
+        --color-bg-1-hover: rgb(80, 80, 80);
+        /* Color for nested components (cards, nested containers, etc.) */
+        --color-bg-2: rgb(60, 60, 60);
+        --color-bg-2-hover: rgb(60, 60, 60);
+        --color-bg-2-border: rgb(80, 80, 80);
+        --color-bg-2-selected: rgb(70, 70, 70);
+        /* Color for components (buttons, text fields, etc.) */
+        --color-bg-3: rgb(80, 80, 80);
+        --color-bg-3-hover: rgb(90, 90, 90);
+        --color-bg-3-border: rgb(95, 95, 95);
+
+        --color-theme-1: rgb(255, 81, 133);
+        --color-theme-1-fg: white;
+        --color-theme-1-hover: rgb(255, 42, 106);
+        --color-theme-2: #4075a6;
+        --color-theme-2-fg: white;
+        --color-theme-2-hover: #5ba6eb;
+
+        --color-theme-1-somelight: rgb(224, 173, 96);
+        --color-theme-1-light: rgb(105, 70, 20);
+        --color-theme-1-extralight: rgb(139, 89, 31);
+
+        --border-color: rgb(61, 61, 61);
+
+        --color-shadow: rgba(255, 255, 255, 0.1);
+
+        --color-checkbox-bg: rgb(54, 54, 54);
+        --color-checkbox-border: rgb(102, 102, 102);
+
+        /* For use as a primary color for borders */
+        --color-success: #129c00;
+        --color-info: #00a4e6;
+        --color-warning: #ffd000;
+        --color-danger: #ff6363;
+        /* For use as a background colors */
+        --color-success-bg: #30e01945;
+        --color-info-bg: #00b7ff45;
+        --color-warning-bg: #ffd00045;
+        --color-danger-bg: #ff636345;
+        /* For use as a primary color for text */
+        --color-success-fg: #30e019;
+        --color-info-fg: #00b7ff;
+        --color-warning-fg: #ffd000;
+        --color-danger-fg: #ff6363;
+
+        --color-text: rgba(255, 255, 255, 0.8);
+        /* Slightly muted text color for less important parts (like sidebar) */
+        --color-text-1: rgba(255, 255, 255, 0.6);
+        /* Muted text color for non-focus parts (like subtitles) */
+        --color-text-2: rgba(255, 255, 255, 0.5);
+        --color-text-themed: rgba(255, 255, 255, 0.9);
+
+        --column-width: 42rem;
+        --column-margin-top: 4rem;
+        font-family: var(--font-body);
+        color: var(--color-text);
+    }
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    background-color: var(--color-bg-0);
+}
+
+:global(*) {
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--color-theme-1);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 1.5rem;
+    overflow-wrap: anywhere;
+}
+
+h2 {
+    font-size: 1.3rem;
+    overflow-wrap: anywhere;
+}
+
+h3 {
+    font-size: 1.2rem;
+    overflow-wrap: anywhere;
+}
+
+h4 {
+    font-size: 1.1rem;
+    overflow-wrap: anywhere;
+}
+
+p {
+    overflow-wrap: anywhere;
+}
+
+input,
+button {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button:focus:not(:focus-visible) {
+    outline: none;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.hover-shadow {
+    transition: box-shadow 0.1s ease-in-out, border 0.1s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 0 0.5rem var(--color-shadow);
+    border: 1px solid var(--border-color);
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-wrap: anywhere;
+}
+
+th {
+    text-align: left;
+    background-color: var(--color-bg-2);
+    color: var(--color-text-1);
+}
+
+th,
+td {
+    padding: 8px 12px;
+}
+
+th,
+tr {
+    border-bottom: 1px solid var(--border-color);
+}
+
+tr {
+    background-color: var(--color-bg-1);
+}
+
+tr:nth-child(even) {
+    background-color: var(--color-bg-1-alternating);
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+
+
+/* Highlight.js modified Monokai theme */
+pre code.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 1em
+}
+
+code.hljs {
+    padding: 3px 5px
+}
+
+.hljs {
+    background: #272822;
+    color: #ddd
+}
+
+.hljs-keyword,
+.hljs-literal,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-strong,
+.hljs-tag {
+    color: #f92672
+}
+
+.hljs-code {
+    color: #66d9ef
+}
+
+.hljs-attribute,
+.hljs-link,
+.hljs-regexp,
+.hljs-symbol {
+    color: #bf79db
+}
+
+.hljs-addition,
+.hljs-built_in,
+.hljs-bullet,
+.hljs-emphasis,
+.hljs-section,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-string,
+.hljs-subst,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-title,
+.hljs-type,
+.hljs-variable {
+    color: #a6e22e
+}
+
+.hljs-class .hljs-title,
+.hljs-title.class_ {
+    color: #fff
+}
+
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta,
+.hljs-quote {
+    color: #9c977e
+}
+
+.hljs-doctag,
+.hljs-keyword,
+.hljs-literal,
+.hljs-section,
+.hljs-selector-id,
+.hljs-selector-tag,
+.hljs-title,
+.hljs-type {
+    font-weight: 700
+}
