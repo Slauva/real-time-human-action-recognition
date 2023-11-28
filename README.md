@@ -8,7 +8,7 @@ The project is focused on UCF-50 dataset action recognition and provides a list 
 | ViTModel      |   0.74        |
 | LRCN          |   0.67        |
 | ConvLSTM      |   0.58        |
-
+| LRCN + Attention      |   0.93        |
 
 # Web service
 This project allows to use web-camera streams or loading the models via web service with nice interface.
@@ -33,11 +33,35 @@ You may upload a video or start streaming Web camera data right into the chosen 
 > ```
 
 # Models
-- ConvLSTM:
-Original model kaggle notebook:
-https://www.kaggle.com/code/yaryeva/pytorch-video-classification-with-conv2d-lstm
+- ResNetLSTM: \
+Original model kaggle [notebook](
+https://www.kaggle.com/code/yaryeva/pytorch-video-classification-with-conv2d-lstm) \
 **Architecture:**
 ResNet model with LSTM
 ![ResNetLSTM](readme_images/Conv-LSTM-neural-network-structure-is-composed-of-three-main-functional-layers.png)
-<!-- 
-Conv2+LSTM model weights are available at [GoogleDrive](https://drive.google.com/drive/folders/1xgorX581Iv82WWPtNKoS4LoTWrUoX5Tk) -->
+
+- ViTModel \
+Original model kaggle [notebook](https://www.kaggle.com/code/yaryeva/pmdl-vit) \
+**Architecture:**
+ViTModel
+![ViTModel](readme_images/ViT.png)
+
+- ConvLSTM \
+Original model kaggle [notebook](https://www.kaggle.com/code/yaryeva/pmdl-vit) \
+**Architecture:**
+ConvLSTM
+![ConvLSTM](readme_images/CONV_LSTM.jpg)
+
+- LRCN \
+Original model kaggle [notebook](https://www.kaggle.com/code/yaryeva/pmldl-2-cnn-lstm) \
+**Architecture:**
+LRCN
+![LRCN](readme_images/LRCN_MODEL.png)
+
+- ResNet + LSTM with Attention \
+Original model kaggle [notebook](https://www.kaggle.com/code/yaryeva/pmldl-cnn-lstm-with-attention/notebook) \
+**Architecture:**
+ResNet + LSTM with Attention
+![ResNet + LSTM with Attention](readme_images/cnn_attention.jpg)
+
+
